@@ -8,7 +8,7 @@ import LandingNav from "./components/LandingNav";
 
 function Preloader() {
   return (
-    <div id="preloader" className="hidden">
+    <div id="preloader">
       <img
         src="/lHeart.svg"
         alt="Heart 1"

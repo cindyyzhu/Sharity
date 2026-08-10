@@ -43,25 +43,10 @@ export function BulletPointList() {
 
 
 function Home() {
-  <style jsx>{`
-    @keyframes gradientAnimation {
-      0% {
-        background-position: 100% 0%;
-      }
-      50% {
-        background-position: 0% 100%;
-      }
-      100% {
-        background-position: 100% 0%;
-      }
-    }
-  `}</style>
-
-  const { user, error, loading } = useUser();
+  const { user, isLoading } = useUser();
   const router = useRouter();
 
-  if (loading) return <h1>Loading...</h1>
-  if (error) return <h1>{error.message}</h1>
+  if (isLoading) return <h1>Loading...</h1>
 
   return (
     <div>
